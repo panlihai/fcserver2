@@ -135,8 +135,9 @@
 	</bean>
 	<bean id="mainDao" class="cn.pcorp.dao.MainDao">
 		<property name="runPid" value="${runPid}"/>
-		<property name="dynamicDataSource" ref="dynamicDataSource" />
-		<property name="dynamicJdbcTemplate" ref="dynamicJdbcTemplate" />
+		<!-- <property name="dynamicDataSource" ref="dynamicDataSource" />
+		<property name="dynamicJdbcTemplate" ref="dynamicJdbcTemplate" /> -->
+		<property name="baseDao" ref="baseDao" />
 	</bean>
 	<bean id="baseService" class="cn.pcorp.service.BaseService">
 		<property name="baseDao" ref="baseDao" />
