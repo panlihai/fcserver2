@@ -80,7 +80,7 @@ public class MainController {
 			// // 得到请求对象
 			RequestModel rm = this.baseService.getRequestModel(paramBean, request, response);
 			if (rm == null) {
-				result = this.baseService.getBackCode(rm, null, "40004", ApiUtil.getBackName(baseService.getBaseDao(), "40004"), paramBean,
+				result = this.baseService.getBackCode(rm, null, "40004", ApiUtil.getBackName(baseService.getMainDao(),baseService.getBaseDao(), "40004"), paramBean,
 						"校验异常:校验产品的服务是否开放");
 			} else {
 				// 校验参数合法性
