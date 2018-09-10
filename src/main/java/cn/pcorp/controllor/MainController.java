@@ -71,7 +71,7 @@ public class MainController {
 		// 获取产品id
 		paramBean.set(MethodConstant.PID, pId);
 		// 获取应用id
-//		paramBean.set(MethodConstant.SID, sId);
+		paramBean.set("SID", sId);
 		//
 		paramBean.setStr(PageUtil.PAGE_APPID, paramBean.getStr(MethodConstant.AID));
 		// 获取用户信息
